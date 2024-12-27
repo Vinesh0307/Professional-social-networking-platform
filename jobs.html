@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search Web Application - Jobs</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #0073b1;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-icon img {
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* Main Styling */
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    .job-search-section {
+      margin-bottom: 30px;
+    }
+
+    .job-search-section h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .job-search-bar {
+      display: flex;
+      gap: 10px;
+    }
+
+    .job-search-bar input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .job-search-bar button {
+      padding: 10px 20px;
+      background-color: #0073b1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .job-search-bar button:hover {
+      background-color: #005582;
+    }
+
+    .job-listings {
+      margin-top: 20px;
+    }
+
+    .job-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      background: #fff;
+    }
+
+    .job-card h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .job-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .job-card .btn-apply {
+      display: inline-block;
+      padding: 8px 12px;
+      color: white;
+      background-color: #0073b1;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .job-card .btn-apply:hover {
+      background-color: #005582;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #f3f3f3;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #0073b1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+      <a href="index.html"><img src="C:\Users\ASUS\Downloads\DALL·E 2024-11-20 17.52.35 - Create a modern and unique brand logo for a company called Rozgaar. The logo should feature the letters 'R' and 'G' in a stylish and creative way, int.webp" alt="Logo" class="logo"></a>
+    <nav>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="network.html">My Network</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="messaging.html">Messaging</a>
+      <a href="notifications.html">Notifications</a>
+      <div class="profile-icon">
+        <div class="profile-icon">
+        <a href="profile.html"><img src="C:\Users\ASUS\Videos\Captures\1.jpg" alt="Profile">Profile</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="job-search-section">
+      <h1>Find Your Next Job</h1>
+      <div class="job-search-bar">
+        <input type="text" id="searchInput" placeholder="Search for job titles or companies">
+        <button onclick="searchJobs()">Search</button>
+      </div>
+    </section>
+
+    <section class="job-listings" id="jobList">
+      <h2>Job Recommendations</h2>
+      <div class="job-card">
+        <h3>Software Engineer</h3>
+        <p>Company: Tech Corp</p>
+        <p>Location: New York, NY</p>
+        <a href="#" class="btn-apply">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>Data Scientist</h3>
+        <p>Company: DataWorks</p>
+        <p>Location: San Francisco, CA</p>
+        <a href="#" class="btn-apply">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>UX Designer</h3>
+        <p>Company: Creative Studio</p>
+        <p>Location: Austin, TX</p>
+        <a href="#" class="btn-apply">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>Backend Developer</h3>
+        <p>Company: Cloudy Systems</p>
+        <p>Location: Seattle, WA</p>
+        <a href="#" class="btn-apply">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>Product Manager</h3>
+        <p>Company: InnovateX</p>
+        <p>Location: Boston, MA</p>
+        <a href="#" class="btn-apply">Apply Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>
+      <a href="about.html">About</a> |
+      <a href="help.html">Help</a> |
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+    <p>&copy; 2024 Job Search App</p>
+  </footer>
+
+  <script>
+    function searchJobs() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const jobs = document.querySelectorAll('.job-card');
+      let found = false;
+
+      jobs.forEach(job => {
+        const title = job.querySelector('h3').textContent.toLowerCase();
+        const company = job.querySelector('p').textContent.toLowerCase();
+
+        if (title.includes(input) || company.includes(input)) {
+          job.style.display = 'block';
+          found = true;
+        } else {
+          job.style.display = 'none';
+        }
+      });
+
+      if (!found) {
+        document.getElementById('jobList').innerHTML = '<h2>No jobs found for your search.</h2>';
+      }
+    }
+  </script>
+</body>
+</html>

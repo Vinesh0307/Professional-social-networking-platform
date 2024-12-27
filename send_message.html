@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Message</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f3f3f3;
+      padding: 20px;
+    }
+    header {
+      background-color: #0073b1;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    header a:hover {
+      text-decoration: underline;
+    }
+    main {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      display: inline-block;
+      background-color: #0073b1;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #005582;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+    }
+    footer a {
+      color: #0073b1;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Rozgaar - Message</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="network.html">Network</a>
+      <a href="messaging.html">Messaging</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Send a Message</h1>
+    <form>
+      <label for="recipient">Recipient:</label>
+      <input type="text" id="recipient" name="recipient" placeholder="Enter recipient's name or email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Rozgaar. <a href="help.html">Need Help?</a></p>
+  </footer>
+</body>
+</html>

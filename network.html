@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job search web application- My Network</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #0073b1;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-icon img {
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      display: none;
+      background: white;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      list-style: none;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .dropdown a {
+      color: #0073b1;
+      text-decoration: none;
+      display: block;
+      padding: 5px 10px;
+    }
+
+    .dropdown a:hover {
+      background-color: #f3f3f3;
+    }
+
+    /* Main Styling */
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    .connections-section {
+      margin-bottom: 30px;
+    }
+
+    .connections-section h1,
+    .groups-section h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .connections-section p {
+      font-size: 18px;
+    }
+
+    .connections-list,
+    .groups-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .connection-item,
+    .group-item {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      width: calc(33.333% - 20px);
+      background: #fff;
+    }
+
+    .connection-item img,
+    .group-item img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .connection-item h3,
+    .group-item h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .connection-item p,
+    .group-item p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      color: white;
+      background-color: #0073b1;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #005582;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #f3f3f3;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #0073b1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <a href="index.html"><img src="C:\Users\ASUS\Downloads\DALL·E 2024-11-20 17.52.35 - Create a modern and unique brand logo for a company called Rozgaar. The logo should feature the letters 'R' and 'G' in a stylish and creative way, int.webp"alt="Logo" class="logo"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="network.html">My Network</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="messaging.html">Messaging</a>
+      <a href="notifications.html">Notifications</a>
+      <div class="profile-icon">
+        <img src="C:\Users\ASUS\Videos\Captures\1.jpg" alt="Profile Picture">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="connections-section">
+      <h1>My Connections</h1>
+      <p>You have 145 connections. <a href="connections.html">See All Connections</a></p>
+      <div class="connections-list">
+        <div class="connection-item">
+          <img src="C:\Users\ASUS\Downloads\praveen.jpg" alt="Profile Picture">
+          <h3>Praveen Vennapusa</h3>
+          <p>Software Engineer</p>
+          <a href="send_message.html" class="btn">Message</a>
+        </div>
+        <div class="connection-item">
+          <img src="C:\Users\ASUS\Downloads\nikhil.jpg" alt="Profile Picture">
+          <h3>Nikhil T</h3>
+          <p>Data Scientist</p>
+          <a href="send_message.html" class="btn">Message</a>
+        </div>
+        <div class="connection-item">
+          <img src="C:\Users\ASUS\Downloads\punith.jpg" alt="Profile Picture">
+          <h3>Punith Vennapusa</h3>
+          <p>UX Designer</p>
+          <a href="send_message.html" class="btn">Message</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="groups-section">
+      <h1>Groups & Events</h1>
+      <p>Join or manage your professional groups and events.</p>
+      <div class="groups-list">
+        <div class="group-item">
+          <img src="assets/logo.png" alt="Group Picture">
+          <h3>Web Developers Group</h3>
+          <p>32,000 members</p>
+          <a href="#" class="btn">Visit Group</a>
+        </div>
+        <div class="group-item">
+          <img src="assets/logo.png" alt="Group Picture">
+          <h3>AI Enthusiasts</h3>
+          <p>15,000 members</p>
+          <a href="#" class="btn">Visit Group</a>
+        </div>
+        <div class="group-item">
+          <img src="assets/logo.png" alt="Group Picture">
+          <h3>Marketing Professionals</h3>
+          <p>12,000 members</p>
+          <a href="#" class="btn">Visit Group</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>
+      <a href="about.html">About</a> |
+      <a href="help.html">Help</a> |
+      <a href="help.html">Privacy Policy</a>
+    </p>
+    <p>&copy; 2024 Professional social networking platform</p>
+  </footer>
+</body>
+</html>

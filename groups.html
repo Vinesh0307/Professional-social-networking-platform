@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Clone - Groups</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0073b1;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .logo {
+      height: 40px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .profile-icon img {
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
+    .group-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .group-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      background: #fff;
+    }
+    .group-item h3 {
+      font-size: 18px;
+    }
+    footer {
+      background-color: #f3f3f3;
+      text-align: center;
+      padding: 10px;
+    }
+    footer a {
+      color: #0073b1;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="network.html">My Network</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="messaging.html">Messaging</a>
+      <a href="notifications.html">Notifications</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Groups</h1>
+    <div class="group-list">
+      <div class="group-item">
+        <h3>Web Developers Group</h3>
+        <p>A community of web developers sharing resources and knowledge.</p>
+      </div>
+      <div class="group-item">
+        <h3>AI Enthusiasts</h3>
+        <p>Explore the latest trends in Artificial Intelligence and machine learning.</p>
+      </div>
+      <div class="group-item">
+        <h3>Product Management</h3>
+        <p>Networking group for product managers and entrepreneurs.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <a href="about.html">About</a> |
+      <a href="help.html">Help</a> |
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+    <p>&copy; 2024 Professional social networking platform</p>
+  </footer>
+</body>
+</html>
